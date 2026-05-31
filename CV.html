@@ -1,0 +1,415 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divyansh Dadhich | Resume</title>
+
+<style>
+:root{
+    --primary:#0f172a;
+    --secondary:#1e3a8a;
+    --light:#f8fafc;
+    --white:#ffffff;
+    --gray:#64748b;
+    --border:#e2e8f0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:#1f2937;
+}
+
+/* NAVBAR */
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:var(--primary);
+    padding:15px 30px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* LAYOUT */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:300px;
+    background:var(--primary);
+    color:white;
+    padding:40px 25px;
+    text-align:center;
+    position:sticky;
+    top:60px;
+    height:calc(100vh - 60px);
+}
+
+.profile-pic{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:#334155;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.sidebar h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.sidebar p{
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.contact a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:10px 0;
+}
+
+.contact a:hover{
+    color:#60a5fa;
+}
+
+/* MAIN CONTENT */
+.main{
+    flex:1;
+    padding:40px;
+}
+
+.section{
+    margin-bottom:50px;
+}
+
+.section-title{
+    font-size:28px;
+    color:var(--secondary);
+    margin-bottom:20px;
+    border-left:5px solid var(--secondary);
+    padding-left:15px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:8px;
+}
+
+.card p{
+    color:var(--gray);
+    line-height:1.6;
+}
+
+/* SKILLS */
+.filter-buttons{
+    margin-bottom:20px;
+}
+
+.filter-buttons button{
+    border:none;
+    padding:10px 18px;
+    margin-right:10px;
+    border-radius:6px;
+    cursor:pointer;
+    background:var(--secondary);
+    color:white;
+    font-weight:600;
+}
+
+.filter-buttons button:hover{
+    opacity:0.9;
+}
+
+.skill{
+    display:inline-block;
+    padding:10px 15px;
+    background:#dbeafe;
+    color:#1e40af;
+    border-radius:25px;
+    margin:6px;
+    font-weight:600;
+}
+
+footer{
+    text-align:center;
+    color:var(--gray);
+    padding:30px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:0;
+}
+
+.main{
+    padding:20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<div class="profile-pic">
+Your Photo
+</div>
+
+<h1>Divyansh Dadhich</h1>
+
+<p>CA Intermediate Candidate</p>
+
+<div class="contact">
+<a href="tel:+919829328420">📞 +91 9829328420</a>
+<a href="mailto:divyansh28420@gmail.com">✉ divyansh28420@gmail.com</a>
+</div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<section id="about" class="section">
+<h2 class="section-title">Career Objective</h2>
+
+<div class="card">
+<p>
+Seeking articleship at a reputed organization where I can enhance
+my knowledge in Audit & Assurance, contribute effectively as a
+team member, and gain practical exposure to complement my
+academic learning.
+</p>
+</div>
+</section>
+
+<section id="education" class="section">
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+<h3>CA Intermediate (Group I)</h3>
+<p>
+Institute of Chartered Accountants of India<br>
+2022 | 261/400 | First Attempt
+</p>
+</div>
+
+<div class="card">
+<h3>CA Foundation</h3>
+<p>
+Institute of Chartered Accountants of India<br>
+2021 | 214/400 | Second Attempt
+</p>
+</div>
+
+<div class="card">
+<h3>B.Com</h3>
+<p>
+Jai Narayan Vyas University<br>
+Pursuing Final Year
+</p>
+</div>
+
+<div class="card">
+<h3>CBSE Class XII</h3>
+<p>88.2% | 2020</p>
+</div>
+
+<div class="card">
+<h3>CBSE Class X</h3>
+<p>81% | 2018</p>
+</div>
+
+</section>
+
+<section id="experience" class="section">
+
+<h2 class="section-title">Work Experience</h2>
+
+<div class="card">
+<h3>Articleship / Professional Experience</h3>
+<p>
+Currently seeking Articleship opportunities in Audit,
+Taxation, Compliance and Assurance functions.
+</p>
+</div>
+
+</section>
+
+<section id="skills" class="section">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="filter-buttons">
+<button onclick="filterSkills('all')">All</button>
+<button onclick="filterSkills('advanced')">Advanced</button>
+<button onclick="filterSkills('intermediate')">Intermediate</button>
+</div>
+
+<div id="skills-container">
+
+<span class="skill advanced">Hard Working</span>
+<span class="skill advanced">Time Management</span>
+
+<span class="skill intermediate">Patient</span>
+<span class="skill intermediate">Fast Learner</span>
+
+</div>
+
+</section>
+
+<section id="projects" class="section">
+
+<h2 class="section-title">Achievements & Certifications</h2>
+
+<div class="card">
+<h3>IT & Orientation Course</h3>
+<p>
+Completed Information Technology and Orientation Course
+conducted by ICAI.
+</p>
+</div>
+
+<div class="card">
+<h3>English Olympiad</h3>
+<p>
+Cleared International Olympiad of English Language conducted
+by SilverZone Foundation.
+</p>
+</div>
+
+<div class="card">
+<h3>School Volleyball Team</h3>
+<p>
+Represented school volleyball team in 2018.
+</p>
+</div>
+
+<div class="card">
+<h3>Community Participation</h3>
+<p>
+Participated in Plantation Project organized by Rotary Club Jodhpur.
+</p>
+</div>
+
+<div class="card">
+<h3>Learning & Development</h3>
+<p>
+Attended a 3-day seminar on fast learning and memory techniques.
+</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Hobbies & Interests</h2>
+
+<div class="card">
+<p>
+🏏 Playing Cricket<br>
+📚 Reading
+</p>
+</div>
+
+</section>
+
+</div>
+</div>
+
+<footer>
+© 2026 Divyansh Dadhich | Professional Resume Website
+</footer>
+
+<script>
+function filterSkills(level){
+
+const skills = document.querySelectorAll('.skill');
+
+skills.forEach(skill=>{
+
+if(level === 'all'){
+skill.style.display='inline-block';
+}
+else if(skill.classList.contains(level)){
+skill.style.display='inline-block';
+}
+else{
+skill.style.display='none';
+}
+
+});
+
+}
+</script>
+
+</body>
+</html>
+```
